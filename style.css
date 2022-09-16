@@ -121,10 +121,14 @@
 	transform: rotate(135.55deg) translate(31%, 33%);
 	left: 50%;
 }
+.image_block img {
+	width: 100%;
+	height: auto;
+}
 .image_block__content {
 	position: relative;
 }
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
 	.text_block:before {
 		opacity: 0.7;
 	}
@@ -138,8 +142,7 @@
 		/*font-size: 40px;*/
 	}
 }
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
 	.header {
 		padding: 30px 0;
 	}
@@ -175,7 +178,6 @@
 	.button_wrap {
 		margin-bottom: 80px;
 	}
-
 	.button {
 		max-width: 100%;
 		font-size: 22px;
@@ -183,6 +185,12 @@
 	.button:first-of-type {
 		margin-right: 0;
 		margin-bottom: 25px;
+	}
+}
+@media (max-width: 480px) {
+	.image_block {
+		bottom: 0;
+		transform: translateY(-50%);
 	}
 }
 
