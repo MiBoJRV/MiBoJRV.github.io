@@ -5,12 +5,13 @@
 	font-family: 'DM Sans', sans-serif;
 }
 .section-hero {
-	background: url("img/bg.webp");
+	background-image: url("img/bg.webp");
 	color: #FFFFFF;
 	background-color: rgba(52, 73, 137, 1);
 	position: relative;
 	overflow: hidden;
 	padding-top: 197px;
+	background-size: contain;
 }
 .section-hero:after {
 	content: '';
