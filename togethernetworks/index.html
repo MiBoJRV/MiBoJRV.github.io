@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>StarCompany</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="page-container">
+    <div>
+          <img class="logo" src="images/logo.svg" alt="logo StarCompany">
+    </div>
+    <form class="login-form">
+      <div class="form-fields hide">
+        <div class="username-field">
+          <input type="text" id="username" name="username" placeholder="Email">
+        </div>
+        <div class="pass-field">
+          <input type="password" id="password" name="password" placeholder="Password">
+          <a href="#">Forgot your password?</a>
+        </div>
+      </div>
+      <button class="login-btn">Log In</button>
+    </form>
+  </div>
+</header>
+<main>
+  <div class="main-container">
+    <h1>STARCOMPANY DESIGNS, MANUFACTURES AND <span>Launches Advanced Rockets and  Spacecrafts</span></h1>
+    <div class="slider">
+      <button class="prev-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17">
+          <g>
+            <g opacity=".5">
+              <path fill="#fff"
+                    d="M10.012 1.42L2.932 8.5l7.08 7.08-1.432 1.432-7.08-7.08-.08.08L-.013 8.58l.08-.08-.08-.08L1.42 6.988l.08.08 7.08-7.08z"/>
+            </g>
+          </g>
+        </svg>
+      </button>
+      <div class="stepper">
+        <div class="step step-1 active">
+          <h5>Who are you?</h5>
+          <div class="select">
+            <div class="select-header">
+              <span class="select-current">Engineer</span>
+              <div class="select-icon"></div>
+            </div>
+            <div class="select-body">
+              <div class="select-item"><p>Engineer</p></div>
+              <div class="select-item"><p>Business Development Executive</p></div>
+              <div class="select-item"><p>Office Manager/PA</p></div>
+              <div class="select-item"><p>Accountant</p></div>
+              <div class="select-item"><p>VR Designer</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="step step-2 ">
+          <h5>What is your age?</h5>
+          <div class="select">
+            <div class="select-header">
+              <span class="select-current">18</span>
+              <div class="select-icon"></div>
+            </div>
+            <div class="select-body">
+              <div class="select-item"><p>19</p></div>
+              <div class="select-item"><p>20</p></div>
+              <div class="select-item"><p>21</p></div>
+              <div class="select-item"><p>22</p></div>
+              <div class="select-item"><p>23</p></div>
+              <div class="select-item"><p>24</p></div>
+              <div class="select-item"><p>25</p></div>
+              <div class="select-item"><p>26</p></div>
+              <div class="select-item"><p>27</p></div>
+            </div>
+          </div>
+          <div class="error-label"></div>
+        </div>
+        <div class="step step-3 ">
+          <h5>I am from</h5>
+          <div class="input">
+            <input type="text" id="location" name="location" placeholder="New Roads, 70760">
+          </div>
+          <div class="error-label"></div>
+          <p class="text-label">E.g.: New Roads or 70760 <br> We don’t use postal addresses to contact members directly!
+          </p>
+        </div>
+        <div class="step step-4 ">
+          <h5>Your email adress</h5>
+          <div class="input">
+            <input type="email" id="email" name="emain" placeholder="Input your email">
+          </div>
+          <div class="error-label"></div>
+        </div>
+        <div class="step step-5 ">
+          <h5>Create your password</h5>
+          <div class="input">
+            <input type="password" id="stepper_password" name="password" placeholder="•••••••••••••••">
+          </div>
+          <div class="error-label"></div>
+          <p class="text-label">By clicking the button above you agree to our <a href="#">Terms of Use</a> <br>
+            and <a href="#">Privacy Policy</a> including use of cookies and to receive newsletters,<br>
+            account updates and offers sent by StarCompany.</p>
+        </div>
+        <div class="dots"></div>
+      </div>
+
+      <button class="next-button">
+        Next step
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17">
+          <g>
+            <g>
+              <path fill="#fff"
+                    d="M1.42-.012l7.08 7.08.08-.08 1.432 1.432-.08.08.08.08-1.432 1.432-.08-.08-7.08 7.08-1.433-1.432 7.08-7.08-7.08-7.08z"/>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

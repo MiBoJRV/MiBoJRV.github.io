@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.cdnfonts.com/css/arial-mt');
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+//colors
+@grey: #6e747c;
+@blue: #83a6e4;
+@white: #ffffff;
+@red: #e22a32;
+@white-05: rgba(255, 255, 255, 0.5);
+@green-gradient: linear-gradient(29deg, #4caf50 0%, #3cd342 100%);
+@blue-gradient: linear-gradient(29deg, #5866ea 0%, #2ba0ea 100%);
+@blue-gradient-hover: linear-gradient(29deg, #2ba0ea 0%, #5866ea 100%);
+
+//fonts
+@font-Arial: 'Arial MT', sans-serif;
+@font-OpenSans: 'Open Sans', sans-serif;
+@font-ProximaNova: 'Proxima Nova', sans-serif;
+
+//typography
+@font-sm: 11px;
+@font-base-sm: 13px;
+@font-base: 14px;
+@font-base-xl: 18px;
+@font-big: 38px;
+@font-big-sm: 36px;
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/clouds-cold-dark-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 20px;
+
+  @media screen and (max-width: 768px) {
+    background-size: inherit;
+  }
+}
+
+.page-container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+
+  .logo {
+    margin-right: 30px;
+    @media screen and (max-width: 600px) {
+      height: 44px;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.login-form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+  font-family: @font-Arial;
+  max-width: 506px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .form-fields {
+    display: flex;
+    gap: 13px;
+    flex-grow: 1;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      bottom: -55px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  input {
+    height: 40px;
+    font-family: @font-Arial;
+    border-radius: 4px;
+    outline: none;
+    line-height: 10px;
+    border: none;
+    display: block;
+  }
+
+  input[type="text"], input[type="password"] {
+    max-width: 200px;
+    min-width: 120px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    font-size: @font-base;
+    display: block;
+  }
+
+  .login-btn {
+    height: 40px;
+    width: 80px;
+    min-width: 80px;
+    font-family: @font-Arial;
+    border-radius: 4px;
+    outline: none;
+    line-height: 10px;
+    border: none;
+    font-size: @font-base-sm;
+    background-image: @blue-gradient;
+    padding: 14px 21px;
+    cursor: pointer;
+    color: @white;
+
+    &:hover {
+      box-shadow: 0 1px 17px rgba(43, 160, 234, 0.66);
+    }
+  }
+
+  .pass-field, .username-field {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    flex-grow: 1;
+
+    a {
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      color: @white;
+      font-size: @font-sm;
+
+      &:hover {
+        color: @blue;
+      }
+    }
+  }
+}
+
+main {
+  font-family: @font-ProximaNova;
+
+  .main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -67%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      position: static;
+      transform: none;
+      margin-top: 80px;
+    }
+
+    h1 {
+      font-size: @font-big;
+      font-weight: 600;
+      color: @blue;
+      text-align: center;
+      max-width: 903px;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: @font-big-sm;
+        letter-spacing: 3.28px;
+        font-weight: 200;
+        color: @white;
+        display: block;
+
+        @media screen and (max-width: 600px) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .slider {
+      max-width: 581px;
+      width: 100%;
+      display: flex;
+      margin-top: 40px;
+      position: relative;
+      left: 43px;
+
+      @media screen and (max-width: 768px) {
+        padding: 100px 0 120px;
+        margin: 0;
+        left: 0;
+
+      }
+
+      @media screen and (max-width: 600px) {
+        max-width: 360px;
+      }
+
+      .prev-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        border: 2px solid @white-05;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 30px;
+        outline: none;
+        cursor: pointer;
+
+        @media screen and (max-width: 600px) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-top: 40px;
+          margin-right: 0;
+        }
+
+        &:hover {
+          border-color: @white;
+
+          svg g {
+            opacity: 1;
+          }
+        }
+      }
+
+      .next-button {
+        width: 120px;
+        height: 40px;
+        border-radius: 4px;
+        font-size: @font-base;
+        color: @white;
+        font-weight: 700;
+        background-image: @blue-gradient;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 30px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        @media screen and (max-width: 600px) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin-top: 40px;
+          margin-left: 0;
+        }
+
+        &.last-step {
+          background-color: #4CAF50;
+          background-image: none;
+
+          &:hover {
+            box-shadow: 0 1px 17px rgba(76, 175, 80, 0.66)
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 1px 17px rgba(43, 160, 234, 0.66);
+        }
+
+        svg {
+          margin-left: 13px;
+        }
+      }
+    }
+
+    .stepper {
+      max-width: 360px;
+      width: 100%;
+      height: 90px;
+      border-radius: 4px;
+      background-color: rgba(225, 230, 235, 0.5);
+      position: relative;
+
+      @media screen and (max-width: 600px) {
+        max-width: 400px;
+      }
+
+      .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 11px 4px 4px;
+
+        .text-label, a {
+          font-size: @font-sm;
+          color: @white-05;
+          line-height: 16px;
+          font-weight: 700;
+          margin-top: 15px;
+          text-align: center;
+          margin-bottom: 20px;
+
+          @media screen and (max-width: 600px) {
+            margin-top: 30px;
+          }
+        }
+
+        a:hover {
+          color: @blue;
+        }
+      }
+
+      h5 {
+        color: @white;
+        font-size: @font-base;
+        font-weight: 700;
+        line-height: 15px;
+        margin-bottom: 5px;
+      }
+
+      .select {
+        margin: 0 auto;
+        position: relative;
+        height: 55px;
+        max-width: 352px;
+        width: 100%;
+        border-radius: 4px;
+        border: none;
+        text-align: center;
+        color: @grey;
+        font-size: @font-base-xl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @white;
+        cursor: pointer;
+
+        &.is-active {
+          .select-body {
+            display: block;
+          }
+
+          .select-icon {
+            border-width: 0 5.5px 6px 5.5px;
+            border-color: transparent transparent #6e747c transparent;
+            transform: translateY(2px);
+          }
+        }
+
+        &-header {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 25px;
+          position: relative;
+        }
+
+        &-current {
+          font-size: 18px;
+          line-height: 24px;
+          padding: 8px;
+        }
+
+        &-icon {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          position: absolute;
+          right: 25px;
+          top: 25px;
+          z-index: 10;
+          border-width: 6px 5.5px 0 5.5px;
+          border-color: #6e747c transparent transparent transparent;
+        }
+
+        &-body {
+          background-color: @white;
+          display: none;
+          left: 0;
+          position: absolute;
+          z-index: 9;
+          right: 0;
+          top: 0;
+          max-height: 217px;
+          padding: 13px 0;
+          overflow: scroll;
+        }
+
+        &-item {
+          cursor: pointer;
+          padding: 4px 10px;
+
+          &:hover {
+            p {
+              background-color: #e2e2e2;
+              font-weight: 700;
+            }
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 30px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .input {
+        height: 55px;
+        max-width: 352px;
+        width: 100%;
+        color: #6e747c;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+
+        input {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          border: none;
+          border-radius: 4px;
+          outline: none;
+          font-size: @font-base-xl;
+        }
+      }
+
+      .step {
+        display: none;
+      }
+
+      .active {
+        display: flex;
+      }
+
+      .dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -80px;
+
+        @media screen and (max-width: 600px) {
+          bottom: -20px;
+        }
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .dot.active {
+        background-color: @white;
+
+      }
+    }
+
+  }
+}

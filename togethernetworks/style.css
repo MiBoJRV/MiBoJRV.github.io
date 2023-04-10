@@ -1,0 +1,708 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: arial mt;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTEXTRABOLD.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTLIGHT.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTMEDIUM.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTEXTRABOLDITALIC.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTLIGHTITALIC.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTMEDIUMITALIC.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/arialmtblackitalic.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: italic;
+  font-weight: 500;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTITALIC.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALBOLDMT.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Arial MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALBOLDITALICMT.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt narrow;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial MT Narrow'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTNARROW.woff) format('woff');
+}
+@font-face {
+  font-family: arial rounded mt;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial Rounded MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALROUNDEDMT.woff) format('woff');
+}
+@font-face {
+  font-family: arial rounded mt bold;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial Rounded MT Bold'), url(https://fonts.cdnfonts.com/s/29107/ARLRDBD.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt narrow;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Arial MT Narrow'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTNARROWITALIC.woff) format('woff');
+}
+@font-face {
+  font-family: arialmt;
+  font-style: normal;
+  font-weight: 500;
+  src: local('ArialMT'), url(https://fonts.cdnfonts.com/s/29107/arialmt.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt black;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Arial MT Black'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTBLACK.woff) format('woff');
+}
+@font-face {
+  font-family: arial rounded mt;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Arial Rounded MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALROUNDEDMTLIGHT.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt narrow;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Arial MT Narrow'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTNARROWBOLD.woff) format('woff');
+}
+@font-face {
+  font-family: arial mt narrow;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Arial MT Narrow'), url(https://fonts.cdnfonts.com/s/29107/ARIALMTNARROWBOLDITALIC.woff) format('woff');
+}
+@font-face {
+  font-family: arial rounded mt;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Arial Rounded MT'), url(https://fonts.cdnfonts.com/s/29107/ARIALROUNDEDMTEXTRABOLD.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-Italic.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-Light.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-LightItalic.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBold.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-SemiBoldItalic.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-BoldItalic.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBold.woff) format('woff');
+}
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-ExtraBoldItalic.woff) format('woff');
+}
+@font-face {
+  font-family: open sans light;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-Light-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: open sans condensed;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed'), url(https://fonts.cdnfonts.com/s/14884/OpenSans-CondBold.woff) format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Regular Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Regular.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 250;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Thin Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 250;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Thin.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Light.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Light Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Semibold Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Bold Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Bold.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Extrabold Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Extrabold.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Black Italic.woff') format('woff');
+}
+@font-face {
+  font-family: proxima nova;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Proxima Nova'), url('https://fonts.cdnfonts.com/s/27118/Mark Simonson  Proxima Nova Black.woff') format('woff');
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/clouds-cold-dark-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-size: inherit;
+  }
+}
+.page-container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+}
+.page-container .logo {
+  margin-right: 30px;
+}
+@media screen and (max-width: 600px) {
+  .page-container .logo {
+    height: 44px;
+  }
+}
+.hide {
+  display: none !important;
+}
+.login-form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+  font-family: 'Arial MT', sans-serif;
+  max-width: 506px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .login-form {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+}
+.login-form .form-fields {
+  display: flex;
+  gap: 13px;
+  flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  .login-form .form-fields {
+    position: absolute;
+    bottom: -55px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+.login-form input {
+  height: 40px;
+  font-family: 'Arial MT', sans-serif;
+  border-radius: 4px;
+  outline: none;
+  line-height: 10px;
+  border: none;
+  display: block;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  max-width: 200px;
+  min-width: 120px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+  display: block;
+}
+.login-form .login-btn {
+  height: 40px;
+  width: 80px;
+  min-width: 80px;
+  font-family: 'Arial MT', sans-serif;
+  border-radius: 4px;
+  outline: none;
+  line-height: 10px;
+  border: none;
+  font-size: 13px;
+  background-image: linear-gradient(29deg, #5866ea 0%, #2ba0ea 100%);
+  padding: 14px 21px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.login-form .login-btn:hover {
+  box-shadow: 0 1px 17px rgba(43, 160, 234, 0.66);
+}
+.login-form .pass-field,
+.login-form .username-field {
+  position: relative;
+  max-width: 200px;
+  width: 100%;
+  flex-grow: 1;
+}
+.login-form .pass-field a,
+.login-form .username-field a {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  color: #ffffff;
+  font-size: 11px;
+}
+.login-form .pass-field a:hover,
+.login-form .username-field a:hover {
+  color: #83a6e4;
+}
+main {
+  font-family: 'Proxima Nova', sans-serif;
+}
+main .main-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -67%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  main .main-container {
+    position: static;
+    transform: none;
+    margin-top: 80px;
+  }
+}
+main .main-container h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #83a6e4;
+  text-align: center;
+  max-width: 903px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (max-width: 600px) {
+  main .main-container h1 {
+    font-size: 28px;
+  }
+}
+main .main-container h1 span {
+  font-size: 36px;
+  letter-spacing: 3.28px;
+  font-weight: 200;
+  color: #ffffff;
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  main .main-container h1 span {
+    font-size: 26px;
+  }
+}
+main .main-container .slider {
+  max-width: 581px;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+  left: 43px;
+}
+@media screen and (max-width: 768px) {
+  main .main-container .slider {
+    padding: 100px 0 120px;
+    margin: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .main-container .slider {
+    max-width: 360px;
+  }
+}
+main .main-container .slider .prev-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  main .main-container .slider .prev-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 40px;
+    margin-right: 0;
+  }
+}
+main .main-container .slider .prev-button:hover {
+  border-color: #ffffff;
+}
+main .main-container .slider .prev-button:hover svg g {
+  opacity: 1;
+}
+main .main-container .slider .next-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  background-image: linear-gradient(29deg, #5866ea 0%, #2ba0ea 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  main .main-container .slider .next-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+main .main-container .slider .next-button.last-step {
+  background-color: #4CAF50;
+  background-image: none;
+}
+main .main-container .slider .next-button.last-step:hover {
+  box-shadow: 0 1px 17px rgba(76, 175, 80, 0.66);
+}
+main .main-container .slider .next-button:hover {
+  box-shadow: 0 1px 17px rgba(43, 160, 234, 0.66);
+}
+main .main-container .slider .next-button svg {
+  margin-left: 13px;
+}
+main .main-container .stepper {
+  max-width: 360px;
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  background-color: rgba(225, 230, 235, 0.5);
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  main .main-container .stepper {
+    max-width: 400px;
+  }
+}
+main .main-container .stepper .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 11px 4px 4px;
+}
+main .main-container .stepper .step .text-label,
+main .main-container .stepper .step a {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  main .main-container .stepper .step .text-label,
+  main .main-container .stepper .step a {
+    margin-top: 30px;
+  }
+}
+main .main-container .stepper .step a:hover {
+  color: #83a6e4;
+}
+main .main-container .stepper h5 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+main .main-container .stepper .select {
+  margin: 0 auto;
+  position: relative;
+  height: 55px;
+  max-width: 352px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  color: #6e747c;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+main .main-container .stepper .select.is-active .select-body {
+  display: block;
+}
+main .main-container .stepper .select.is-active .select-icon {
+  border-width: 0 5.5px 6px 5.5px;
+  border-color: transparent transparent #6e747c transparent;
+  transform: translateY(2px);
+}
+main .main-container .stepper .select-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  position: relative;
+}
+main .main-container .stepper .select-current {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px;
+}
+main .main-container .stepper .select-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 10;
+  border-width: 6px 5.5px 0 5.5px;
+  border-color: #6e747c transparent transparent transparent;
+}
+main .main-container .stepper .select-body {
+  background-color: #ffffff;
+  display: none;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 0;
+  max-height: 217px;
+  padding: 13px 0;
+  overflow: scroll;
+}
+main .main-container .stepper .select-item {
+  cursor: pointer;
+  padding: 4px 10px;
+}
+main .main-container .stepper .select-item:hover p {
+  background-color: #e2e2e2;
+  font-weight: 700;
+}
+main .main-container .stepper .select-item p {
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+main .main-container .stepper .input {
+  height: 55px;
+  max-width: 352px;
+  width: 100%;
+  color: #6e747c;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+}
+main .main-container .stepper .input input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+}
+main .main-container .stepper .step {
+  display: none;
+}
+main .main-container .stepper .active {
+  display: flex;
+}
+main .main-container .stepper .dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -80px;
+}
+@media screen and (max-width: 600px) {
+  main .main-container .stepper .dots {
+    bottom: -20px;
+  }
+}
+main .main-container .stepper .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+main .main-container .stepper .dot.active {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
